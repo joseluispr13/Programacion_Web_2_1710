@@ -1,22 +1,21 @@
 
-/*alert("BIENVENIDO");
-alert("ESTA PÁGINA POSEE UNA FUNCIÓN LA CUAL DEPENDIENDO LA HORA EN LA QUE SE ESTE EJECUTANDO DICHA FUNCIÓN, ESTA LE DEVOLVERÁ UN SALUDO DE ACUERDO A LA HORA OBTENIDA");
-*/
-function saludarSegunHora(nombreUsuario){
-    const horaActual = new Date().getHours(); // Obtener la hora actual
-    let saludo;
+alert("Este breve formulario permitirá conocer algunos gustos sobre del usuario");
 
-    if(horaActual < 12){
-        saludo = "Buenos días " + nombreUsuario;
-    } else if (horaActual => 12 && horaActual <= 18){
-        saludo = "Buenas tardes " + nombreUsuario;;   
-    }else {
-        saludo = "Buenas noches " + nombreUsuario;;
-    }
+let deporte = prompt("Ingresa tu deporte favorito: ");
+alert("Tu deporte favorito es: " + deporte);
+console.log("Resumen de datos");
+console.log("Tu deporte favorito es: " + deporte);
 
-    return saludo;
-}
+let comida = prompt("Ingresa tu comida favorita: ");
+alert("Tu comida favorita es: " + comida);
+console.log("Tu comida favorita es: " + comida);
 
-const nombreUsuario = "Jose Luis";
-console.log(saludarSegunHora(nombreUsuario));
-console.log("Hasta luego, vuelva pronto :)");
+let serie = prompt("Ingresa tu serie o película favorita: ");
+alert("Tu serie o película favorita es: " + serie);
+console.log("Tu serie o película favorita es: " + serie);
+
+alert("Hasta luego, vuelva pronto :)");
+
+
+
+
