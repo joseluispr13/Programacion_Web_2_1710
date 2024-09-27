@@ -1,0 +1,62 @@
+1. Imprimir asteriscos en horizontal y en vertical
+function imprimirHyV(n) {
+    let resultado = "";
+    // Imprimir asteriscos en horizontal
+    for (let i = 0; i < n; i++) {
+        resultado += "*";
+    }
+    resultado += "\n";
+    // Imprimir asteriscos en vertical
+    for (let i = 1; i < n; i++) {
+        resultado += "*\n";
+    }
+    alert(resultado);
+}
+let n = 4;
+imprimirHyV(n);
+2. Imprimir en horizontal y en vertical dado "n"
+function imprimirHyV(n) { 
+    let resultado = "";
+    // Imprimir línea horizontal
+    for (let i = 0; i < n; i++) {
+        resultado += "*";
+    }
+    resultado += "\n";
+    // Imprimir línea vertical
+    for (let i = 1; i < n; i++) {
+        resultado += "*\n";
+    }
+    alert(resultado);
+}
+// Pedir al usuario la cantidad de asteriscos a imprimir
+let n = parseInt(prompt("¿Cuántos asteriscos deseas imprimir tanto en horizontal como en vertical?"));
+imprimirHyV(n);
+3. Dibujar un cuadrado una vez que el usuario defina su número de lados
+function dibujarCuadrado(n) {
+    let resultado = "";
+    
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            resultado += "*"; 
+        }
+        resultado += "\n"; 
+    }
+    
+    alert(resultado);
+}
+// Pedir al usuario el tamaño del cuadrado
+let tamañoCuadrado = parseInt(prompt("¿Cuál es el tamaño del cuadrado de asteriscos?"));
+dibujarCuadrado(tamañoCuadrado);
+4. Mostrar las tablas de multiplicar del 1 al 10
+function TablasDeMultiplicar() {
+    for (let i = 1; i <= 10; i++) {
+        let resultado = "Tabla del " + i + ":\n\n"; // Añadir el encabezado de la tabla
+        
+        for (let j = 1; j <= 10; j++) {
+            resultado += i + " x " + j + " = " + (i * j) + "\n"; // Formato de la operación
+        }
+        
+        alert(resultado); // Mostrar la tabla
+    }
+}
+TablasDeMultiplicar();
