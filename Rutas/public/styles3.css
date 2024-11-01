@@ -1,0 +1,120 @@
+/* Estilos generales */ 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #fff); /* Fondo de gradiente llamativo */
+    color: #495057;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.form-container {
+    background-color: #ffffff; /* Fondo blanco para contrastar con el gradiente */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+    outline: none;
+}
+
+/* Nuevo estilo para el contenedor de todos los botones */
+.all-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 10px; /* Espacio entre botones */
+}
+
+/* Botones */
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Botón para regresar */
+button:first-child {
+    background-color: #3498db;
+}
+
+button:first-child:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para el contenedor del código QR */
+.qr-code-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .all-buttons-container {
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
